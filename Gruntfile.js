@@ -25,10 +25,11 @@ Watch task
         css: {
           files: '**/*.scss',
           tasks: ['sass'],
-          options: {
-          livereload: true,
-        }
-    }
+        },
+        options: {
+        livereload: true,
+      }
+  }
 
 
 
