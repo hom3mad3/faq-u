@@ -1,0 +1,25 @@
+{
+  "name": "faq-u",
+  "version": "1.0.0",
+  "description": "theme for faq u schule project",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hom3mad3/faq-u.git"
+  },
+  "author": "Micaela Rava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hom3mad3/faq-u/issues"
+  },
+  "homepage": "https://github.com/hom3mad3/faq-u#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}
