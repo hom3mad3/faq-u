@@ -104,7 +104,7 @@ add_action( 'widgets_init', 'faq_u_widgets_init' );
 function faq_u_scripts() {
 	wp_enqueue_style( 'faq-u-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('faq-u-google-fonts', 'https://fonts.googleapis.com/css?family=Quicksand:400,300,700' );
+	wp_enqueue_style('faq-u-google-fonts', 'https://fonts.googleapis.com/css?family=Quicksand:400,300,700', false );
 
 	wp_enqueue_script( 'faq-u-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
