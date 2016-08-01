@@ -5,8 +5,20 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(1);
+	@include font-size(1); //16px
 	line-height: $font__line-height-body;
+}
+
+.site-content {
+	font-size: 1.125em;
+	line-height: 1.6em;
+}
+
+article h2{
+	@include font-size(4);
+}
+article {
+	@include font-size(1);
 }
 
 @import "fonts";
