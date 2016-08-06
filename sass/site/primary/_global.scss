@@ -1,16 +1,19 @@
 .site-main {
-  margin: 1.4em;
+  margin: 1.4em auto;
   font-size: .8em;
   line-height: 1.6em;
 }
-
 article {
   text-align: center;
+  margin: 0 0 1em 1.4em;
+}
+
+.entry-content{
+  padding: 0 1.8em;
 }
 
 @media screen and (min-width: 30em) {
   .site-main {
-    margin: 1.8em;
   }
 }
 
@@ -18,10 +21,19 @@ article {
   .site-main {
     font-size: 1em;
   }
+  article {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 57em) {
   .site-main {
-      margin: 1.8em auto;
+    font-size: .8em;
+    line-height: 1.6em;
   }
+
+  article {
+    width: 20%;
+  }
+
 }
