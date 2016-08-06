@@ -771,30 +771,41 @@ a:hover, a:active {
 
 article {
   text-align: center;
-  margin: 0 0 1em 1.4em;
+  margin: 0 1.4em 1em 1.4em;
 }
 
 .entry-content {
   padding: 0 1.8em;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 42em) {
   .site-main {
     font-size: 1em;
   }
 
   article {
-    width: 50%;
+    width: 42%;
   }
 }
-@media screen and (min-width: 57em) {
+@media screen and (min-width: 60em) {
   .site-main {
     font-size: .8em;
     line-height: 1.6em;
   }
 
   article {
-    width: 20%;
+    margin: 0 0 1em 1.4em;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 80em) {
+  article {
+    width: 22.7%;
+  }
+}
+@media screen and (min-width: 100em) {
+  article {
+    width: 18%;
   }
 }
 /*--------------------------------------------------------------
