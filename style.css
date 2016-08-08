@@ -270,14 +270,22 @@ textarea {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+h2 .entry-title {
+  line-height: 0.2em;
+}
+
 .site-content {
   font-size: 1.125em;
   line-height: 1.6em;
 }
 
 article h2 {
-  font-size: 64px;
-  font-size: 4rem;
+  font-size: 48px;
+  font-size: 3rem;
 }
 
 article {
@@ -765,13 +773,17 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-main {
   margin: 1.4em auto;
-  font-size: .8em;
+  font-size: 0.8em;
   line-height: 1.6em;
 }
 
 article {
   text-align: center;
-  margin: 0 1.4em 1em 1.4em;
+  margin: 0 1.4em 1em;
+}
+
+.entry-title {
+  padding: 0 1.8em;
 }
 
 .entry-content {
@@ -784,12 +796,12 @@ article {
   }
 
   article {
-    width: 42%;
+    width: 43%;
   }
 }
 @media screen and (min-width: 60em) {
   .site-main {
-    font-size: .8em;
+    font-size: 0.8em;
     line-height: 1.6em;
   }
 

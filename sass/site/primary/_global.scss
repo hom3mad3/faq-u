@@ -1,53 +1,45 @@
 .site-main {
-  margin: 1.4em auto;
-  font-size: .8em;
-  line-height: 1.6em;
+	margin: 1.4em auto;
+	font-size: 0.8em;
+	line-height: 1.6em;
 }
 article {
-  text-align: center;
-  margin: 0 1.4em 1em 1.4em;
+	text-align: center;
+	margin: 0 1.4em 1em;
 }
 
-.entry-content{
-  padding: 0 1.8em;
+.entry-title {
+	padding: 0 1.8em;
 }
-
-@media screen and (min-width: 30em) {
-
+.entry-content {
+	padding: 0 1.8em;
 }
-
+@media screen and (min-width: 30em) {}
 @media screen and (min-width: 42em) {
-  .site-main {
-    font-size: 1em;
-  }
-  article {
-    width: 42%;
-  }
+	.site-main {
+		font-size: 1em;
+	}
+	article {
+		width: 43%;
+	}
 }
-
 @media screen and (min-width: 60em) {
-  .site-main {
-    font-size: .8em;
-    line-height: 1.6em;
-  }
-
-  article {
-    margin: 0 0 1em 1.4em;
-    width: 30%;
-  }
-
+	.site-main {
+		font-size: 0.8em;
+		line-height: 1.6em;
+	}
+	article {
+		margin: 0 0 1em 1.4em;
+		width: 30%;
+	}
 }
-
 @media screen and (min-width: 80em) {
-  article {
-    width: 22.7%;
-  }
-
+	article {
+		width: 22.7%;
+	}
 }
-
 @media screen and (min-width: 100em) {
-  article {
-    width: 18%;
-  }
-
+	article {
+		width: 18%;
+	}
 }

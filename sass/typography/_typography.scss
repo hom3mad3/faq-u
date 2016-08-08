@@ -9,13 +9,22 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+a {
+	text-decoration: none!important;
+}
+
+h2 .entry-title {
+
+	line-height: 0.2em;
+}
+
 .site-content {
 	font-size: 1.125em;
 	line-height: 1.6em;
 }
 
 article h2{
-	@include font-size(4);
+	@include font-size(3);
 }
 article {
 	@include font-size(1);
