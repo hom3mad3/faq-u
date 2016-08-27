@@ -110,7 +110,11 @@ function faq_u_scripts() {
 
 	wp_enqueue_script('jquery-masonry');
 
-	wp_enqueue_script( 'faq-u-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'faq-u-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+	wp_localize_script( 'faq-u-navigation', 'screenReaderText', array(
+		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'faq-u' ) . '</span>',
+		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'faq-u' ) . '</span>',
+	) );
 
 	wp_enqueue_script( 'faq-u-custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js');
 
