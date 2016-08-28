@@ -1,9 +1,10 @@
 /* Small menu. */
 .main-navigation a {
 	display: block;
-	padding: 0.8em 0;
+	padding: 0.8em;
 	position: relative;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .main-navigation ul {
@@ -12,10 +13,12 @@
 }
 .main-navigation ul ul {
 	display: none;
+	margin: 0;
 }
 
 .main-navigation ul .toggled-on {
 	display: block;
+	margin: 0;
 }
 
 .main-navigation li {
@@ -66,6 +69,7 @@
 
 .no-js .main-navigation ul ul {
 	display: block;
+	margin: 0;
 }
 
 .dropdown-toggle {
@@ -135,14 +139,13 @@
 		overflow: hidden;
 	}
 
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
+.nav-previous {
+	float: left;
+	width: 50%;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
 }

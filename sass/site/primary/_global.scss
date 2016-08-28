@@ -1,5 +1,13 @@
+.site-branding h1 {
+		color: $color_headings;
+    font-size: 3em;
+}
+.site-branding {
+    margin: 0 0 1.5em 1.6em !important;
+}
+
 .site-main {
-	margin: 1.4em auto;
+	margin: 1.4em auto!important;
 	font-size: 0.8em;
 	line-height: 1.6em;
 }

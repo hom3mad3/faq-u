@@ -5,6 +5,7 @@
    var msnry = new Masonry( container, {
      itemSelector: 'article',
      columnWidth: 'article',
+     percentPosition: true
    });
 
 

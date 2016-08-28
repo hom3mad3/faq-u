@@ -577,9 +577,10 @@ a:hover, a:active {
 /* Small menu. */
 .main-navigation a {
   display: block;
-  padding: 0.8em 0;
+  padding: 0.8em;
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main-navigation ul {
@@ -589,10 +590,12 @@ a:hover, a:active {
 
 .main-navigation ul ul {
   display: none;
+  margin: 0;
 }
 
 .main-navigation ul .toggled-on {
   display: block;
+  margin: 0;
 }
 
 .main-navigation li {
@@ -638,6 +641,7 @@ a:hover, a:active {
 
 .no-js .main-navigation ul ul {
   display: block;
+  margin: 0;
 }
 
 .dropdown-toggle {
@@ -823,8 +827,17 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Global
 --------------------------------------------------------------*/
+.site-branding h1 {
+  color: #4d4d4d;
+  font-size: 3em;
+}
+
+.site-branding {
+  margin: 0 0 1.5em 1.6em !important;
+}
+
 .site-main {
-  margin: 1.4em auto;
+  margin: 1.4em auto !important;
   font-size: 0.8em;
   line-height: 1.6em;
 }
@@ -888,11 +901,12 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 article {
   background-color: #fff;
+  box-shadow: 0 0 2px 1px rgba(210, 210, 210, 0.15);
 }
 
 article p {
-  text-align: left;
-  margin: 0 1.4em 1em;
+  text-align: center;
+  margin: 0 1.4em 1em 1.2em;
 }
 
 article .entry-title {
@@ -906,23 +920,23 @@ article .entry-content {
 }
 
 @media screen and (min-width: 42em) {
-  article {
+  nav, article {
     width: 43%;
   }
 }
 @media screen and (min-width: 60em) {
-  article {
+  nav, article {
     margin: 0 0 1em 1.4em;
     width: 30%;
   }
 }
 @media screen and (min-width: 80em) {
-  article {
+  nav, article {
     width: 22.7%;
   }
 }
 @media screen and (min-width: 100em) {
-  article {
+  nav, article {
     width: 18%;
   }
 }
