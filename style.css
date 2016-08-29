@@ -693,7 +693,10 @@ a:hover, a:active {
 }
 
 /*small menu*/
-.menu-toggle,
+.menu-toggle {
+  display: none;
+}
+
 .main-navigation.toggled ul {
   display: block;
 }
@@ -904,6 +907,11 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Article
 --------------------------------------------------------------*/
+nav, article {
+  margin: 0 0 1em 1.4em;
+  width: 87%;
+}
+
 article {
   background-color: #fff;
   box-shadow: 0 0 2px 1px rgba(210, 210, 210, 0.15);
