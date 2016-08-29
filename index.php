@@ -16,6 +16,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+
+
+		<nav id="site-navigation" class="main-navigation grid-item" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'faq-u' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu', 'grid-item' ) ); ?>
+			</nav><!-- #site-navigation -->
+
+
+
 		<?php
 		if ( have_posts() ) :
 

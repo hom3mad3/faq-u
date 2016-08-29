@@ -1,4 +1,7 @@
 /* Small menu. */
+.nav-menu {
+	z-index: 2; /* above other items */
+}
 .main-navigation a {
 	display: block;
 	padding: 0.8em;
