@@ -1,4 +1,8 @@
 /* Small menu. */
+.menu-menu-1-container {
+    background-color: #00AEAF;
+}
+
 .nav-menu {
 	z-index: 2; /* above other items */
 }
@@ -123,7 +127,7 @@
 	display: none;
 }
 .main-navigation.toggled ul {
-	display: block;
+	display: none;
 }
 
 @media screen and (min-width: 37.5em) {
