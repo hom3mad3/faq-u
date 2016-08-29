@@ -18,6 +18,11 @@ article .entry-content {
 	padding: 0 1.8em;
 }
 
+article .entry-footer {
+  text-align: center;
+  padding: 0.5em;
+}
+
 @media screen and (min-width: 42em) {
 	nav, article {
 		width: 43%;

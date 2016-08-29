@@ -424,7 +424,7 @@ html {
 }
 
 body {
-  background: #F8F4F1;
+  background: #F2F2F2;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -556,13 +556,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #d4b22f;
+  color: #4d4d4d;
 }
 a:visited {
-  color: #5cadad;
+  color: #4d4d4d;
 }
 a:hover, a:focus, a:active {
-  color: #87256a;
+  color: #d4b22f;
 }
 a:focus {
   outline: thin dotted;
@@ -599,7 +599,7 @@ a:hover, a:active {
 }
 
 .main-navigation li {
-  border-top: 3px solid #F8F4F1;
+  border-top: 3px solid #F2F2F2;
   position: relative;
 }
 
@@ -679,7 +679,7 @@ a:hover, a:active {
 }
 
 .dropdown-toggle:focus {
-  outline: 2px solid #F8F4F1;
+  outline: 2px solid #F2F2F2;
   outline: 2px solid rgba(51, 51, 51, 0.3);
 }
 
@@ -917,6 +917,11 @@ article .entry-title {
 
 article .entry-content {
   padding: 0 1.8em;
+}
+
+article .entry-footer {
+  text-align: center;
+  padding: 0.5em;
 }
 
 @media screen and (min-width: 42em) {
