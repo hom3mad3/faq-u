@@ -48,9 +48,11 @@
 	background-color: $color_nav_child;
 }
 
+
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
-	font-weight: 700;
+	font-weight: 500;
+	background-color: #00AEAF;
 }
 
 .main-navigation .nav-menu > ul > li:first-child,
