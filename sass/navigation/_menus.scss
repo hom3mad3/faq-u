@@ -97,9 +97,14 @@
 	width: 42px;
 }
 
+// .main-navigation .current-menu-item > .dropdown-toggle:after ,
+// .main-navigation .current-menu-ancestor > .dropdown-toggle:after  {
+// 	content: url("assets/img/exit_icon-01.png");
+// }
+
 .dropdown-toggle:after {
 	color: #333;
-	content: url("");
+	content: url("assets/img/down_arrow_icon.png");
 	font-size: 24px;
 	line-height: 42px;
 	position: relative;
@@ -110,17 +115,14 @@
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-	background-color: #eaeaea;
-	background-color: rgba(51, 51, 51, 0.1);
+
 }
 
 .dropdown-toggle:focus {
-	outline: 2px solid $color__background-body;
-	outline: 2px solid rgba(51, 51, 51, 0.3);
 }
 
 .dropdown-toggle.toggle-on:after {
-	content: '*';
+	content: url("assets/img/down_arrow_icon.png");
 }
 
 /*small menu*/

@@ -575,6 +575,10 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 /* Small menu. */
+.menu-menu-1-container {
+  background-color: #00AEAF;
+}
+
 .nav-menu {
   z-index: 2;
   /* above other items */
@@ -620,7 +624,8 @@ a:hover, a:active {
 
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
-  font-weight: 700;
+  font-weight: 500;
+  background-color: #00AEAF;
 }
 
 .main-navigation .nav-menu > ul > li:first-child,
@@ -668,7 +673,7 @@ a:hover, a:active {
 
 .dropdown-toggle:after {
   color: #333;
-  content: "*";
+  content: url("assets/img/down_arrow_icon.png");
   font-size: 24px;
   line-height: 42px;
   position: relative;
@@ -677,19 +682,8 @@ a:hover, a:active {
   width: 4px;
 }
 
-.dropdown-toggle:hover,
-.dropdown-toggle:focus {
-  background-color: #eaeaea;
-  background-color: rgba(51, 51, 51, 0.1);
-}
-
-.dropdown-toggle:focus {
-  outline: 2px solid #F2F2F2;
-  outline: 2px solid rgba(51, 51, 51, 0.3);
-}
-
 .dropdown-toggle.toggle-on:after {
-  content: '*';
+  content: url("assets/img/down_arrow_icon.png");
 }
 
 /*small menu*/
