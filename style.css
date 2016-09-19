@@ -319,18 +319,18 @@ article {
   src: local("Quicksand Bold"), local("Quicksand-Bold"), url("assets/fonts/quicksand-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quicksand-v5-latin-700.woff2") format("woff2"), url("assets/fonts/quicksand-v5-latin-700.woff") format("woff"), url("assets/fonts/quicksand-v5-latin-700.ttf") format("truetype"), url("assets/fonts/quicksand-v5-latin-700.svg#Quicksand") format("svg");
   /* Legacy iOS */
 }
-/* homer simpson medium*/
+/*FAQ you Schule*/
 @font-face {
-  font-family: 'Homer Simpson';
+  font-family: 'FAQ';
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/Homer-Simpson-Medium.eot");
+  src: url("assets/fonts/faqyouschule.eot");
   /* IE9 Compat Modes */
-  src: local("Homer Simpson"), local("Homer-Simpson"), url("assets/fonts/Homer-Simpson-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Homer-Simpson_Medium.woff2") format("woff2"), url("assets/fonts/Homer-Simpson_Medium.woff") format("woff"), url("assets/fonts/Homer-Simpson-Medium.ttf") format("truetype"), url("assets/fonts/Homer-Simpson-Medium.svg#Homer-Simpson") format("svg");
+  src: local("FAQyouSchule"), local("FAQyouSchule"), url("assets/fonts/faqyouschule.eot?#iefix") format("embedded-opentype"), url("assets/fonts/faqyouschule.woff2") format("woff2"), url("assets/fonts/faqyouschule.woff") format("woff"), url("assets/fonts/faqyouschule.ttf") format("truetype"), url("assets/fonts/faqyouschule.svg#FAQ") format("svg");
   /* Legacy iOS */
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Homer Simpson", sans-serif;
+  font-family: "FAQ",Helvetica, sans-serif;
   clear: both;
   line-height: 1.3em;
   margin-top: 2.5rem;
@@ -342,7 +342,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -494,11 +494,10 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
+  padding: .4em 1em .4em;
 }
 
 input[type="text"],
@@ -618,13 +617,22 @@ a:hover, a:active {
   margin-left: 0.5em;
 }
 
+.main-navigation .menu-item {
+  box-shadow: 1px 1px 1px rgba(210, 210, 210, 0.15);
+}
+
 .main-navigation .sub-menu {
   background-color: #fff;
 }
 
+.main-navigation .current-menu-item > .dropdown-toggle:after,
+.main-navigation .current-menu-ancestor > .dropdown-toggle:after {
+  content: url("assets/img/down_arrow_icon.png");
+}
+
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
-  font-weight: 500;
+  font-weight: 700;
   background-color: #00AEAF;
 }
 
@@ -666,7 +674,7 @@ a:hover, a:active {
   position: absolute;
   text-transform: lowercase;
   /* Stop screen readers to read the text as capital letters */
-  top: 3px;
+  top: -1px;
   right: 0;
   width: 42px;
 }
@@ -683,7 +691,7 @@ a:hover, a:active {
 }
 
 .dropdown-toggle.toggle-on:after {
-  content: url("assets/img/down_arrow_icon.png");
+  content: url("assets/img/up_arrow_icon.png");
 }
 
 /*small menu*/
@@ -901,8 +909,13 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Article
 --------------------------------------------------------------*/
-nav, article {
+nav {
   margin: 0 0 1em 1.4em;
+  width: 87%;
+}
+
+article {
+  margin: 0 0 1em 1.3em;
   width: 87%;
 }
 
@@ -917,7 +930,7 @@ article p {
 }
 
 article .entry-title {
-  margin: 1em 1.8em 0;
+  margin: 1em 1em 0;
   text-align: center;
   line-height: 0.8em;
 }
@@ -938,7 +951,6 @@ article .entry-footer {
 }
 @media screen and (min-width: 60em) {
   nav, article {
-    margin: 0 0 1em 1.4em;
     width: 30%;
   }
 }

@@ -1,5 +1,10 @@
-nav, article {
+nav {
 	margin: 0 0 1em 1.4em;
+	width: 87%;
+}
+
+article {
+	margin: 0 0 1em 1.3em;
 	width: 87%;
 }
 
@@ -14,7 +19,7 @@ article p{
 }
 
 article .entry-title {
-  margin: 1em 1.8em 0;
+  margin: 1em 1em 0;
 	text-align: center;
 	line-height: 0.8em;
 }
@@ -35,7 +40,6 @@ article .entry-footer {
 }
 @media screen and (min-width: 60em) {
 	nav, article {
-		margin: 0 0 1em 1.4em;
 		width: 30%;
 	}
 }
