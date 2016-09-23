@@ -126,6 +126,16 @@ function faq_u_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'faq_u_scripts' );
 
+// Add Isotope
+function add_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/js/jquery.isotope.min.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.js', array('jquery', 'isotope'),  true );
+
+    wp_enqueue_script('isotope-init');
+}
+
+add_action( 'wp_enqueue_scripts', 'add_isotope' );
+
 
 // Disable support for comments and trackbacks in post types
 function df_disable_comments_post_types_support() {
