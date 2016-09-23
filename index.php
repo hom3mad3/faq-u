@@ -35,6 +35,7 @@ get_header(); ?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'faq-u' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu', 'grid-item' ) ); ?>
 			</nav><!-- #site-navigation -->
+
 		<?php
 		if ( have_posts() ) :
 
@@ -86,12 +87,12 @@ get_header(); ?>
 			$termsString .= $term->slug.' '; //create a string that has all the slugs
 		}
 	?>
-	<div class="<?php echo $termsString; ?> item"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
-		<h3><?php the_title(); ?></h3>
-	        <?php if ( has_post_thumbnail() ) {
-                      the_post_thumbnail();
-                } ?>
-	</div> <!-- end item -->
+
+<?php
+	get_template_part( 'template-parts/content', get_post_format() );
+
+	?>
+
     <?php endwhile;  ?>
     </div> <!-- end isotope-list -->
 <?php endif; ?></div>
