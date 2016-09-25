@@ -443,13 +443,13 @@ hr {
 }
 
 ul, ol {
-  margin: 0 0 1.5em 1em;
+  margin: 0;
   list-style-position: inside;
   padding-left: 0;
 }
 
-ul {
-  list-style: disc;
+ul li {
+  list-style: none;
 }
 
 ol {
@@ -458,8 +458,7 @@ ol {
 
 li > ul,
 li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5em;
+  margin: 0;
 }
 
 dt {
@@ -574,18 +573,16 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 /* Small menu. */
-.menu-menu-1-container {
-  background-color: #00AEAF;
+nav {
+  margin: 0 0 1em 1.1em;
+  width: 87%;
 }
 
-.nav-menu {
-  z-index: 2;
-  /* above other items */
+.main-navigation {
+  position: absolute;
 }
 
 .main-navigation a {
-  display: block;
-  padding: 0.8em;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -607,37 +604,37 @@ a:hover, a:active {
 }
 
 .main-navigation li {
+  list-style: none !important;
   border-top: 3px solid #F2F2F2;
   position: relative;
+  box-shadow: 1px 1px 1px rgba(210, 210, 210, 0.15);
+  background-color: white;
+  padding: 0.8em;
 }
 
-.main-navigation li > ul,
-.main-navigation li > ol {
+.main-navigation li > ol,
+.main-navigation li > ul {
   margin-bottom: 0;
   margin-left: 0.5em;
-}
-
-.main-navigation .menu-item {
-  box-shadow: 1px 1px 1px rgba(210, 210, 210, 0.15);
 }
 
 .main-navigation .sub-menu {
   background-color: #fff;
 }
 
-.main-navigation .current-menu-item > .dropdown-toggle:after,
-.main-navigation .current-menu-ancestor > .dropdown-toggle:after {
+.main-navigation .current-menu-ancestor > .dropdown-toggle:after,
+.main-navigation .current-menu-item > .dropdown-toggle:after {
   content: url("assets/img/down_arrow_icon.png");
 }
 
-.main-navigation .current-menu-item > a,
-.main-navigation .current-menu-ancestor > a {
+.main-navigation .current-menu-ancestor > a,
+.main-navigation .current-menu-item > a {
   font-weight: 700;
   background-color: #00AEAF;
 }
 
-.main-navigation .nav-menu > ul > li:first-child,
-.main-navigation .nav-menu > li:first-child {
+.main-navigation .nav-menu > li:first-child,
+.main-navigation .nav-menu > ul > li:first-child {
   border-top: 0;
 }
 
@@ -713,20 +710,20 @@ a:hover, a:active {
   }
 }
 .site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.post-navigation, .site-main
+.posts-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
 .comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
   float: left;
   width: 50%;
 }
 .comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
@@ -909,11 +906,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Article
 --------------------------------------------------------------*/
-nav {
-  margin: 0 0 1em 1.4em;
-  width: 87%;
-}
-
 article {
   margin: 0 0 1em 1.3em;
   width: 87%;

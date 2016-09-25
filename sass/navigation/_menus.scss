@@ -1,16 +1,16 @@
 /* Small menu. */
-.main-navigation{
-  position: absolute;
+nav {
+	margin: 0 0 1em 1.1em;
+	width: 87%;
 }
-
+.main-navigation {
+	position: absolute;
+}
 .main-navigation a {
-	display: block;
-	padding: 0.8em;
-  position: relative;
+	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
@@ -19,52 +19,42 @@
 	display: none;
 	margin: 0;
 }
-
 .main-navigation ul .toggled-on {
 	display: block;
 	margin: 0;
 }
-
 .main-navigation li {
+	list-style: none!important;
 	border-top: 3px solid $color__background-body;
 	position: relative;
+	box-shadow: 1px 1px 1px rgba(210,210,210,.15);
+	background-color: white;
+  padding: 0.8em;
 }
-
-.main-navigation li > ul,
-.main-navigation li > ol {
+.main-navigation li > ol,
+.main-navigation li > ul {
 	margin-bottom: 0;
 	margin-left: 0.5em;
 }
-
-.main-navigation .menu-item {
-  box-shadow:  1px 1px 1px rgba(210,210,210,.15);
-}
-
-.main-navigation .sub-menu{
+.main-navigation .sub-menu {
 	background-color: $color_nav_child;
 }
-
-
-.main-navigation .current-menu-item > .dropdown-toggle:after,
-.main-navigation .current-menu-ancestor > .dropdown-toggle:after {
-content: url("assets/img/down_arrow_icon.png");
+.main-navigation .current-menu-ancestor > .dropdown-toggle:after,
+.main-navigation .current-menu-item > .dropdown-toggle:after {
+	content: url("assets/img/down_arrow_icon.png");
 }
-
-.main-navigation .current-menu-item > a,
-.main-navigation .current-menu-ancestor > a {
+.main-navigation .current-menu-ancestor > a,
+.main-navigation .current-menu-item > a {
 	font-weight: 700;
 	background-color: #00AEAF;
 }
-
-.main-navigation .nav-menu > ul > li:first-child,
-.main-navigation .nav-menu > li:first-child {
+.main-navigation .nav-menu > li:first-child,
+.main-navigation .nav-menu > ul > li:first-child {
 	border-top: 0;
 }
-
 .main-navigation .menu-item-has-children > a {
 	padding-right: 48px;
 }
-
 .main-navigation .menu-item-description {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
@@ -76,12 +66,10 @@ content: url("assets/img/down_arrow_icon.png");
 	line-height: 1.5;
 	margin-top: 0.5em;
 }
-
 .no-js .main-navigation ul ul {
 	display: block;
 	margin: 0;
 }
-
 .dropdown-toggle {
 	background-color: transparent;
 	border: 0;
@@ -92,12 +80,12 @@ content: url("assets/img/down_arrow_icon.png");
 	height: 42px;
 	padding: 0;
 	position: absolute;
-	text-transform: lowercase; /* Stop screen readers to read the text as capital letters */
+	text-transform: lowercase;
+	/* Stop screen readers to read the text as capital letters */
 	top: -1px;
 	right: 0;
 	width: 42px;
 }
-
 .dropdown-toggle:after {
 	color: #333;
 	content: url("assets/img/down_arrow_icon.png");
@@ -108,28 +96,16 @@ content: url("assets/img/down_arrow_icon.png");
 	left: 1px;
 	width: 4px;
 }
-
-.dropdown-toggle:hover,
-.dropdown-toggle:focus {
-
-}
-
-.dropdown-toggle:focus {
-}
-
 .dropdown-toggle.toggle-on:after {
 	content: url("assets/img/up_arrow_icon.png");
 }
-
 /*small menu*/
-
-.menu-toggle{
+.menu-toggle {
 	display: none;
 }
 .main-navigation.toggled ul {
 	display: none;
 }
-
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
@@ -138,23 +114,20 @@ content: url("assets/img/down_arrow_icon.png");
 		display: block;
 	}
 }
-
 .comment-navigation,
-.posts-navigation,
-.post-navigation {
-
+.post-navigation,
+.posts-navigation {
 	.site-main & {
 		margin: 0 0 1.5em;
 		overflow: hidden;
 	}
-
-.nav-previous {
-	float: left;
-	width: 50%;
-}
-.nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
-}
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
 }

@@ -1,5 +1,5 @@
 ul, ol {
-	margin: 0 0 1.5em 1em;
+	margin: 0;
 	list-style-position: inside;
 	padding-left:0;
 }
@@ -14,8 +14,7 @@ ol {
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin: 0;
 }
 
 dt {
