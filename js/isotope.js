@@ -1,9 +1,10 @@
 jQuery(function ($) {
 
-	var $container = $('#isotope-list'); //The ID for the list with all the blog posts
+	var $container = $('#primary'); //The ID for the list with all the blog posts
 	$container.isotope({ //Isotope options, 'item' matches the class in the PHP
 		itemSelector : '.item',
-  		layoutMode : 'masonry'
+  		layoutMode : 'masonry',
+			stamp: '.main-navigation'
 	});
 
 	//Add the class selected to the item that is clicked, and remove from the others
