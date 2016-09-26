@@ -11,6 +11,7 @@ nav {
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
@@ -30,6 +31,13 @@ nav {
 	box-shadow: 1px 1px 1px rgba(210,210,210,.15);
 	background-color: white;
   padding: 0.8em;
+}
+.main-navigation li.menu-button {
+  font-weight: 700;
+  background-color: #00AEAF!important;
+}
+.main-navigation .selected:hover {
+  color: $color__text-input-focus;
 }
 .main-navigation li > ol,
 .main-navigation li > ul {

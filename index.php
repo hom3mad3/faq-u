@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 
 		<nav id="filters" class="main-navigation">
-    <li><a href="#" data-filter="*" class="selected">Everything</a></li>
+    <li class="menu-button"><a href="#" data-filter="*" class="selected">Schulverweigerung</a></li>
 	<?php
 		$terms = get_terms("category"); // get all categories, but you can use any taxonomy
 		$count = count($terms); //How many are they?
@@ -49,7 +49,7 @@ get_header(); ?>
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<h2 class="entry-title">', '</h2>' );
 			endif;
 
 			if ( 'post' === get_post_type() ) : ?>
@@ -76,7 +76,6 @@ get_header(); ?>
 										) );
 									?>
 								</div><!-- .entry-content -->
-
 								<footer class="entry-footer">
 									<?php faq_u_entry_footer(); ?>
 								</footer><!-- .entry-footer -->
@@ -92,4 +91,3 @@ get_header(); ?>
 
 <?php
 get_sidebar();
-get_footer();

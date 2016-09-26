@@ -1,30 +1,40 @@
 .site-branding h1 {
-		color: $color_headings;
-    font-size: 3em;
+	color: $color_headings;
+	font-size: 2em;
 }
 .site-branding {
-    margin: 0 0 1.5em 1.6em !important;
+	margin: 0 0 0 2.5em;
 }
-
+h1 .site-title {
+	color: $color_headings;
+	text-decoration: none;
+	padding: 0;
+}
 .site-main {
-	margin: 1.4em auto!important;
+	margin: 1.4em auto !important;
 	font-size: 0.8em;
 	line-height: 1.6em;
 }
-
 @media screen and (min-width: 30em) {}
 @media screen and (min-width: 42em) {
 	.site-main {
 		font-size: 1em;
 	}
+	.site-content {
+    margin-left: 1em;
+}
 }
 @media screen and (min-width: 60em) {
 	.site-main {
 		font-size: 0.8em;
 		line-height: 1.6em;
 	}
+	.site-branding h1 {
+		font-size: 3em;
+	}
+	.site-branding{
+		margin: 0 0 0 3em;
+	}
 }
-@media screen and (min-width: 80em) {
-}
-@media screen and (min-width: 100em) {
-}
+@media screen and (min-width: 80em) {}
+@media screen and (min-width: 100em) {}
