@@ -32,7 +32,7 @@ get_header(); ?>
 
 
 
-<?php $the_query = new WP_Query( 'posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
+<?php $the_query = new WP_Query( 'orderby=rand&posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
 <?php if ( $the_query->have_posts() ) : ?>
     <div id="isotope-list">
     <?php while ( $the_query->have_posts() ) : $the_query->the_post();
