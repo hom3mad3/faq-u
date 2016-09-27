@@ -29,11 +29,11 @@ nav {
 	border-top: 3px solid $color__background-body;
 	position: relative;
 	box-shadow: 1px 1px 1px rgba(210,210,210,.15);
-	background-color: white;
+	background-color: white!important;
   padding: 0.8em;
 }
-.main-navigation li.menu-button {
-  font-weight: 700;
+.main-navigation .selected li{
+  font-weight: 700!important;
   background-color: #00AEAF!important;
 }
 .main-navigation .selected:hover {

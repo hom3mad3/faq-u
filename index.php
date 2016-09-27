@@ -15,24 +15,20 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-
 		<nav id="filters" class="main-navigation">
-    <li class="menu-button"><a href="#" data-filter="*" class="selected">Schulverweigerung</a></li>
+    <a href="#" data-filter="*" class="selected"><li class="menu-button">Schulverweigerung</li></a>
 	<?php
 		$terms = get_terms("category"); // get all categories, but you can use any taxonomy
 		$count = count($terms); //How many are they?
 		if ( $count > 0 ){  //If there are more than 0 terms
 			foreach ( $terms as $term ) {  //for each term:
-				echo "<li><a href='#' data-filter='.".$term->slug."'>" . $term->name . "</a></li>\n";
-				//create a list item with the current term slug for sorting, and name for label
+				echo "<a href='#' data-filter='.".$term->slug."'><li>" . $term->name . "</li></a>\n";	//create a list item with the current term slug for sorting, and name for label
 			}
 		}
 	?>
 </nav>
 
-
-
-<?php $the_query = new WP_Query( 'orderby=rand&posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
+<?php $the_query = new WP_Query( 'orderby=title' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
 <?php if ( $the_query->have_posts() ) : ?>
     <div id="isotope-list">
     <?php while ( $the_query->have_posts() ) : $the_query->the_post();
