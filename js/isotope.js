@@ -4,9 +4,11 @@ jQuery(function($) {
 	$container.isotope({ //Isotope options, 'item' matches the class in the PHP
 		itemSelector: '.item',
 		layoutMode: 'masonry',
+			masonry: {
+					percentPosition: true
+			},
 		stamp: '.main-navigation',
 		filter: ':not(.impressum)',
-		percentPosition: true
 	});
 
 	//Add the class selected to the item that is clicked, and remove from the others
