@@ -5,8 +5,8 @@ jQuery(function($) {
 		itemSelector: '.item',
 		layoutMode: 'masonry',
 		stamp: '.main-navigation',
-		filter: ':nth-child(-n+11)',
-		filter: ':not(.impressum)'
+		filter: ':not(.impressum)',
+		percentPosition: true
 	});
 
 	//Add the class selected to the item that is clicked, and remove from the others
