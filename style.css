@@ -965,15 +965,22 @@ article .entry-title {
   margin: 1em 1em 0;
   text-align: center;
   line-height: 0.8em;
+  position: relative;
+  cursor: pointer;
 }
 
 article .entry-content {
   padding: 0 1.8em;
+  display: none;
 }
 
 article .entry-footer {
   text-align: center;
   padding: 0.5em;
+}
+
+article span {
+  position: absolute;
 }
 
 @media screen and (min-width: 42em) {

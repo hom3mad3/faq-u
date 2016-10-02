@@ -38,7 +38,7 @@ get_header(); ?>
 			$termsString .= $term->slug.' '; //create a string that has all the slugs
 		}
 	?>
-	<article class="<?php echo $termsString; ?> item post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
+	<article class="<?php echo $termsString; ?> item post" id="post-<?php the_ID(); ?> toggle-view" <?php post_class(); ?>> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
 
 		<header class="entry-header">
 			<?php
@@ -53,12 +53,12 @@ get_header(); ?>
 			<?php
 			endif; ?>
 		</header><!-- .entry-header -->
-
+<span>+</span>
 					<?php if ( has_post_thumbnail() ) {
 											the_post_thumbnail();
 								} ?>
 
-								<div class="entry-content">
+								<div class="entry-content toggled-content">
 									<?php
 										the_content( sprintf(
 											/* translators: %s: Name of current post. */
